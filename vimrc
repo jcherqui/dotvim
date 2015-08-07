@@ -106,9 +106,10 @@ let g:instant_markdown_autostart = 0
 set pastetoggle=<F10>
 
 " ultisnips
+" let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -119,3 +120,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
+" YouCompleteMe
+let g:ycm_key_list_select_completion=['<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
