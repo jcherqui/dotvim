@@ -46,3 +46,6 @@
 [submodule "bundle/LustyExplorer"]
 	path = bundle/LustyExplorer
 	url = https://github.com/vim-scripts/LustyExplorer
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
