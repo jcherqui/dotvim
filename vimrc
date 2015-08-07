@@ -39,12 +39,11 @@ set hidden
 " Active la coloration syntaxique
 syntax enable
 
-" Utilise la version sombre de Solarized
-set background=dark
-" colorscheme solarized
-colorscheme impact
+" Theme monochrome
+colorscheme monochrome
 
-autocmd BufEnter *.md colorscheme default
+" Debug markdown colorscheme
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Active les comportements specifiques aux types de fichiers comme
 " la syntaxe et l’indentation
