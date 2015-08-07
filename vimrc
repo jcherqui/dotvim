@@ -53,6 +53,7 @@ filetype indent on
 
 " Activation de NERDTree au lancement de vim
 " autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Desactiver les touches directionnelles
 map <up> <nop>
@@ -118,7 +119,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_php_checkers = ['phpcs']
+let g:syntastic_php_phpcs_args="--standard=PSR2 -n --report=csv"
 
 " YouCompleteMe
 let g:ycm_key_list_select_completion=['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+
