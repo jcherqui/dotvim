@@ -36,10 +36,16 @@ set backspace=indent,eol,start
 " Cache les fichiers lors de l'ouverture d'autres fichiers
 set hidden
 
+" Tabulation to space
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
 " Active la coloration syntaxique
 syntax enable
 
 " Theme monochrome
+set t_Co=256
 colorscheme monochrome
 
 " Debug markdown colorscheme
