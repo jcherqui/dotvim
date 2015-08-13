@@ -52,9 +52,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown
-[submodule "bundle/monochrome"]
-	path = bundle/monochrome
-	url = https://github.com/fxn/vim-monochrome
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = https://github.com/airblade/vim-gitgutter
