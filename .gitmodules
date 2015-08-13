@@ -58,3 +58,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular
+[submodule "bundle/monochrome"]
+	path = bundle/monochrome
+	url = https://github.com/jcherqui/vim-monochrome
