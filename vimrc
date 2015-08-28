@@ -136,3 +136,5 @@ let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 set laststatus=2
 
+" Warning
+let g:LustyExplorerSuppressRubyWarning = 1
