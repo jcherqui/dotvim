@@ -125,6 +125,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl']
 let g:syntastic_php_checkers = ['phpcs']
 let g:syntastic_php_phpcs_args="--standard=PSR2 -n --report=csv"
 
@@ -138,3 +140,6 @@ set laststatus=2
 
 " Warning
 let g:LustyExplorerSuppressRubyWarning = 1
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
