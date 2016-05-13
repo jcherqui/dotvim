@@ -129,13 +129,15 @@ let g:syntastic_enable_perl_checker = 1
 let g:syntastic_perl_checkers = ['perl']
 let g:syntastic_php_checkers = ['phpcs']
 let g:syntastic_php_phpcs_args="--standard=PSR2 -n --report=csv"
+"let g:syntastic_javascript_checkers = ['jshint']
 
 " YouCompleteMe
 let g:ycm_key_list_select_completion=['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 
 " Powerline
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
+" set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
+set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
 set laststatus=2
 
 " Warning
