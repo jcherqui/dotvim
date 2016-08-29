@@ -145,3 +145,11 @@ let g:LustyExplorerSuppressRubyWarning = 1
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" Spell checking
+set spelllang=fr
+nmap <silent> <leader>s :set spell!<CR>
+
+" CSS autocomplete
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
