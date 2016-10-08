@@ -4,22 +4,16 @@ set nocompatible
 call pathogen#infect()
 
 " -- Affichage
-set title                 " Met a jour le titre de votre fenetre ou de
-                          " votre terminal
+set title                 " Met a jour le titre de votre fenetre ou de votre terminal
 set number                " Affiche le numero des lignes
 set ruler                 " Affiche la position actuelle du curseur
-set wrap                  " Affiche les lignes trop longues sur plusieurs
-                          " lignes
-
-set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
-                          " (pour le scroll)
+set wrap                  " Affiche les lignes trop longues sur plusieurs lignes
+set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur (pour le scroll)
 
 " -- Recherche
 set ignorecase            " Ignore la casse lors d'une recherche
-set smartcase             " Si une recherche contient une majuscule,
-                          " re-active la sensibilite a la casse
-set incsearch             " Surligne les resultats de recherche pendant la
-                          " saisie
+set smartcase             " Si une recherche contient une majuscule, re-active la sensibilite a la casse
+set incsearch             " Surligne les resultats de recherche pendant la saisie
 set hlsearch              " Surligne les resultats de recherche
 
 " -- Beep
@@ -71,10 +65,6 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-" Les ; sont rarement utilises l’un a la suite de l’autre
-" :imap ;; <Esc>
-" :map ;; <Esc>
-
 " MAP leader
 let mapleader = ","
 
@@ -102,11 +92,6 @@ au BufNewFile Dockerfile r ~/.vim/templates/Dockerfile.txt
 
 " Instant markdown plugin
 let g:instant_markdown_autostart = 0
-
-" Scroll mouse
-" set mouse=a
-" map <ScrollWheelUp> <C-Y>
-" map <ScrollWheelDown> <C-E>
 
 " paste toogle
 set pastetoggle=<F10>
@@ -153,3 +138,10 @@ nmap <silent> <leader>s :set spell!<CR>
 " CSS autocomplete
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
+
+" Disable mouse
+set mouse-=a
+
+" Les ; sont rarement utilises l’un a la suite de l’autre
+" :imap ;; <Esc>
+" :map ;; <Esc>
