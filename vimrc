@@ -3,6 +3,9 @@ set nocompatible
 " Activation de pathogen
 call pathogen#infect()
 
+" MAP leader
+let mapleader = ","
+
 " -- Affichage
 set title                 " Met a jour le titre de votre fenetre ou de votre terminal
 set number                " Affiche le numero des lignes
@@ -24,9 +27,6 @@ set noeb
 set novb
 set vb t_vb=
 
-" Active le comportement 'habituel' de la touche retour en arriere
-set backspace=indent,eol,start
-
 " Cache les fichiers lors de l'ouverture d'autres fichiers
 set hidden
 
@@ -45,17 +45,12 @@ colorscheme monochrome
 " Debug markdown colorscheme
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-" Active les comportements specifiques aux types de fichiers comme
-" la syntaxe et l’indentation
+" Active les comportements specifiques aux types de fichiers comme la syntaxe et l’indentation
 filetype on
 filetype plugin on
 filetype indent on
 
-" Activation de NERDTree au lancement de vim
-" autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" Desactiver les touches directionnelles
+" Hardcore mode
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -64,9 +59,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-
-" MAP leader
-let mapleader = ","
 
 " Parametres par defaut pour ack
 let g:ackprg="ack -H --nocolor --nogroup --column"
@@ -79,7 +71,8 @@ nmap <leader>jA mA:Ack "<C-r>=expand("<cWORD>")<cr>"
 " Ctrlp
 let g:ctrlp_map = '<leader>p'
 nmap <Leader>m :CtrlPBufTag<CR>
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|class)$'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_show_hidden = 1
 
 " Viminfo
 set viminfo="NONE"
@@ -97,7 +90,6 @@ let g:instant_markdown_autostart = 0
 set pastetoggle=<F10>
 
 " ultisnips
-" let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
@@ -110,18 +102,16 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_perl_checker = 1
-let g:syntastic_perl_checkers = ['perl']
-let g:syntastic_php_checkers = ['phpcs']
-let g:syntastic_php_phpcs_args="--standard=PSR2 -n --report=csv"
-"let g:syntastic_javascript_checkers = ['jshint']
+
+" Javascript config
+let g:syntastic_javascript_checkers = ['eslint']
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files"
 
 " YouCompleteMe
 let g:ycm_key_list_select_completion=['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 
 " Powerline
-" set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
 set laststatus=2
 
@@ -135,13 +125,33 @@ cmap w!! w !sudo tee > /dev/null %
 set spelllang=fr
 nmap <silent> <leader>s :set spell!<CR>
 
-" CSS autocomplete
+" CSS autocomplete (ctrl-x ctrl-o)
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
 
 " Disable mouse
 set mouse-=a
 
+" Nerdtree
+let NERDTreeShowHidden = 1
+let g:nerdtree_tabs_open_on_console_startup=1 " Startup Nerdtree
+let g:NERDTreeIgnore=['\.swp$', '\~$']
+nmap <silent> <leader>k :NERDTreeToggle<cr>
+
+" Reload vim config
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Shift lines and selections faster with vim-move
+let g:move_map_keys = 0
+vmap <C-j> <Plug>MoveBlockDown
+vmap <C-k> <Plug>MoveBlockUp
+nmap <A-j> <Plug>MoveLineDown
+
 " Les ; sont rarement utilises l’un a la suite de l’autre
 " :imap ;; <Esc>
 " :map ;; <Esc>
+
+" Active le comportement 'habituel' de la touche retour en arriere
+" set backspace=indent,eol,start
+
+" set cursorline
