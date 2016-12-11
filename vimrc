@@ -89,11 +89,6 @@ let g:instant_markdown_autostart = 0
 " paste toogle
 set pastetoggle=<F10>
 
-" ultisnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
 " syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -106,14 +101,6 @@ let g:syntastic_check_on_wq = 0
 " Javascript config
 let g:syntastic_javascript_checkers = ['eslint']
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files"
-
-" YouCompleteMe
-let g:ycm_key_list_select_completion=['<c-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
-
-" Powerline
-set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
-set laststatus=2
 
 " Warning
 let g:LustyExplorerSuppressRubyWarning = 1
@@ -133,9 +120,6 @@ autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
 set mouse-=a
 
 " Nerdtree
-let NERDTreeShowHidden = 1
-let g:nerdtree_tabs_open_on_console_startup=1 " Startup Nerdtree
-let g:NERDTreeIgnore=['\.swp$', '\~$']
 nmap <silent> <leader>k :NERDTreeToggle<cr>
 
 " Reload vim config
@@ -147,11 +131,3 @@ vmap <C-j> <Plug>MoveBlockDown
 vmap <C-k> <Plug>MoveBlockUp
 nmap <A-j> <Plug>MoveLineDown
 
-" Les ; sont rarement utilises l’un a la suite de l’autre
-" :imap ;; <Esc>
-" :map ;; <Esc>
-
-" Active le comportement 'habituel' de la touche retour en arriere
-" set backspace=indent,eol,start
-
-" set cursorline
