@@ -58,6 +58,7 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Templates
 au BufNewFile Dockerfile r ~/.vim/templates/Dockerfile.txt
+au BufNewFile README.md r ~/.vim/templates/README.md
 
 " CSS autocomplete (ctrl-x ctrl-o)
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
