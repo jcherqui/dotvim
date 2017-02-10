@@ -70,5 +70,8 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Copy to the clipboard -- need +xterm-clipboard
 nmap <Leader>y "+y<CR>
 
+" Toogle comment
+noremap <c-_> :call NERDComment(0, "Toggle")<cr>
+
 set viminfo="NONE"
 set hidden
