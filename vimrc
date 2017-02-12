@@ -14,6 +14,7 @@ exec ":source ".g:vimDir.'/config/nerdtree.vim'
 exec ":source ".g:vimDir.'/config/powerline.vim'
 exec ":source ".g:vimDir.'/config/syntastic.vim'
 exec ":source ".g:vimDir.'/config/ultisnips.vim'
+exec ":source ".g:vimDir.'/config/vimmove.vim'
 exec ":source ".g:vimDir.'/config/youcompleteme.vim'
 
 " user configuration

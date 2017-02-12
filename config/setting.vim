@@ -73,5 +73,7 @@ nmap <Leader>y "+y<CR>
 " Toogle comment
 noremap <c-_> :call NERDComment(0, "Toggle")<cr>
 
+" Disable .viminfo file
 set viminfo="NONE"
+
 set hidden
