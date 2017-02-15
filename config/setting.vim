@@ -77,4 +77,7 @@ noremap <c-_> :call NERDComment(0, "Toggle")<cr>
 " Disable .viminfo file
 set viminfo="NONE"
 
+" Toogle number
+nnoremap <c-b> :set invnumber<cr>
+
 set hidden
