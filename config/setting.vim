@@ -64,7 +64,7 @@ set pastetoggle=<F10>
 cmap w!! w !sudo tee > /dev/null %
 
 " Templates
-au BufNewFile Dockerfile r ~/.vim/templates/Dockerfile.txt
+au BufNewFile Dockerfile r ~/.vim/templates/Dockerfile
 au BufNewFile README.md r ~/.vim/templates/README.md
 au BufNewFile index.html r ~/.vim/templates/index.html
 au BufNewFile makefile r ~/.vim/templates/makefile
