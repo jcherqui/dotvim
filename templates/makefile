@@ -19,6 +19,9 @@ watch: ## Watch
 run: ## Run
 	@ echo "Run"
 
+stop: ## Stop
+	@ echo "Stop"
+
 deploy: ## Deploy
 	@ echo "Deploy"
 
