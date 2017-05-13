@@ -1,10 +1,9 @@
 - [x] ctrlp gitignore
-- [ ] Not open nerdtree when no file specified
+- [x] emmet
+- [x] jsx
+- [x] xclip
 - [ ] Moving cursor faster
 - [ ] Autocomplete
-- [ ] emmet 
-- [ ] jsx
 - [ ] php autocompletion
-- [ ] xclip
 - [ ] auto refresh nerdtree
 - [ ] disabled lowercases shortcut

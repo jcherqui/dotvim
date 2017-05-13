@@ -76,8 +76,9 @@ autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
 " Reload vim config
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" Copy to the clipboard -- need +xterm-clipboard
+" Copy to the clipboard -- need +xterm-clipboard (install gvim)
 nmap <Leader>y "+y<CR>
+set clipboard=unnamed,unnamedplus
 
 " Toogle comment
 noremap <c-_> :call NERDComment(0, "Toggle")<cr>
