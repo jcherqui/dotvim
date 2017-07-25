@@ -90,3 +90,8 @@ set viminfo="NONE"
 nnoremap <c-b> :set invnumber<cr>
 
 set hidden
+
+noremap  C "*C
+noremap  c "*c
+vnoremap C "*C
+vnoremap c "*c
