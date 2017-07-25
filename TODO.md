@@ -7,3 +7,4 @@
 - [ ] php autocompletion
 - [ ] auto refresh nerdtree
 - [ ] disabled lowercases shortcut
+- [ ] Client REST
