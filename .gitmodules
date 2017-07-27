@@ -67,12 +67,6 @@
 [submodule "bundle/vim-jsbeautify"]
 	path = bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify
-[submodule "bundle/monochrome"]
-	path = bundle/monochrome
-	url = https://github.com/stoneo/vim-monochrome
-[submodule "bundle/LycosaExplorer"]
-	path = bundle/LycosaExplorer
-	url = https://github.com/stoneo/LycosaExplorer
 [submodule "bundle/vim-es6"]
 	path = bundle/vim-es6
 	url = https://github.com/isRuslan/vim-es6
@@ -88,3 +82,9 @@
 [submodule "bundle/vim-prettier"]
 	path = bundle/vim-prettier
 	url = https://github.com/mitermayer/vim-prettier
+[submodule "bundle/LycosaExplorer"]
+	path = bundle/LycosaExplorer
+	url = https://github.com/ston3o/LycosaExplorer
+[submodule "bundle/monochrome"]
+	path = bundle/monochrome
+	url = https://github.com/stoneo/vim-monochrome
