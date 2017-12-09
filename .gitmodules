@@ -88,3 +88,6 @@
 [submodule "bundle/monochrome"]
 	path = bundle/monochrome
 	url = https://github.com/stoneo/vim-monochrome
+[submodule "bundle/vim-mjml"]
+	path = bundle/vim-mjml
+	url = https://github.com/amadeus/vim-mjml
