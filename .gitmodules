@@ -91,3 +91,6 @@
 [submodule "bundle/vim-mjml"]
 	path = bundle/vim-mjml
 	url = https://github.com/amadeus/vim-mjml
+[submodule "bundle/vim-jsx-improve"]
+	path = bundle/vim-jsx-improve
+	url = https://github.com/neoclide/vim-jsx-improve
