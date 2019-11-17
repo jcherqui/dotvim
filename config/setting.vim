@@ -89,6 +89,10 @@ set viminfo="NONE"
 " Toogle number
 nnoremap <c-b> :set invnumber<cr>
 
+" Case sensitive
+nnoremap / /\c
+nnoremap ? ?\c
+
 set hidden
 
 noremap  C "*C

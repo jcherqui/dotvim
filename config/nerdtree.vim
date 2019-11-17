@@ -11,3 +11,5 @@ function! OpenNerdTree()
     endif
 endfunction
 autocmd VimEnter * call OpenNerdTree()
+
+autocmd BufEnter * lcd %:p:h
