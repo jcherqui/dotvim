@@ -99,3 +99,5 @@ noremap  C "*C
 noremap  c "*c
 vnoremap C "*C
 vnoremap c "*c
+
+nmap <Leader>lb :CtrlPBuffer<cr>

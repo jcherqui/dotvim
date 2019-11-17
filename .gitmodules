@@ -6,7 +6,7 @@
 	url = https://github.com/vim-scripts/colorizer
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
@@ -79,9 +79,6 @@
 [submodule "bundle/vim-prettier"]
 	path = bundle/vim-prettier
 	url = https://github.com/mitermayer/vim-prettier
-[submodule "bundle/LycosaExplorer"]
-	path = bundle/LycosaExplorer
-	url = https://github.com/ston3o/LycosaExplorer
 [submodule "bundle/monochrome"]
 	path = bundle/monochrome
 	url = https://github.com/stoneo/vim-monochrome
