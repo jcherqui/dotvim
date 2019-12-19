@@ -41,10 +41,14 @@ echo 'TL;DR'
 ```
 
 ## Why ?
+## Why XXX ?
+## What is XXX ?
 
 1. Because
 2. Because
 3. Because
+
+## Overview
 
 ## Getting Started
 
@@ -56,11 +60,31 @@ These instructions will get you a copy of the project up and running on your loc
 * Prerequisite 2
 * Prerequisite 3
 
+### Introducing XXX
+
 ### Installation
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#Deployment) to deploy the project on a live system.
+
+To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
+
 ```bash
-make install
+# Clone this repository
+git clone https://github.com/XXX/XXX
+
+# Go into the repository
+cd XXX
+
+# Install dependencies
+npm install
+
+# Run the app
+npm start
 ```
+
+### Uninstall
+
+### Update
 
 ## Features
 
@@ -90,11 +114,45 @@ make test
 * Tech 2
 * Tech 3
 
+## Use Cases
+
+## User journey
+
+## How it works ?
+
+## Demo
+
+## Data model
+
+## What's Next ?
+
+## Usage
+
+## Code of conduct
+
+## Workflow
+
+## Troubleshooting
+
+## Changelog
+
+## Roadmap
+
+## Feedback
+
+Feel free to send us feedback on [Twitter]() or [file an issue](). Feature requests are always welcome. If you wish to contribute, please take a quick look at the [guidelines](CONTRIBUTING.md)!
+
+If there's anything you'd like to chat about, please feel free to join our Gitter chat!
+
+## FAQ
+
 ## Todo
 
 - [ ] Todo 1
 - [ ] Todo 2
 - [ ] Todo 3
+
+## Who is using <PROJECT> ?
 
 ## Contributing
 
