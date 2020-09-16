@@ -85,6 +85,12 @@
 [submodule "bundle/vim-mjml"]
 	path = bundle/vim-mjml
 	url = https://github.com/amadeus/vim-mjml
-[submodule "bundle/vim-jsx-improve"]
-	path = bundle/vim-jsx-improve
-	url = https://github.com/neoclide/vim-jsx-improve
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = https://github.com/mustache/vim-mustache-handlebars
+[submodule "bundle/vim-jsx-pretty"]
+	path = bundle/vim-jsx-pretty
+	url = https://github.com/maxmellon/vim-jsx-pretty
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform
